@@ -1,0 +1,90 @@
+/* Общие настройки html */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  img {
+   display: block;
+    max-width: 100%;
+    height: auto;   
+  }
+
+  /*Конейнер*/
+
+  .container{
+      width: 1920px;
+      margin: 0 auto;
+  }
+
+  /* Навигация */
+
+.page-header{
+
+     width: 1200px;
+      margin: 0 auto;
+}
+  .site-navigation{
+      display: flex;
+      justify-content: space-between;
+      width: 500px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 14px;
+  }
+
+  .menu-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #95e1d3;
+  }
+
+.site-logo{
+  width: 86px;
+  height: 23px;
+  text-decoration: none;
+  color:#95E1D3;
+  font-family: "Montserrat", sans-serif;
+  font-size:30px;
+  font-weight: bold;
+
+}
+
+.page-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+}
+
+.menu-item :hover {
+    color: #f38181; 
+  } 
+
+.menu-item:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #f38181;
+    margin-top: 10px;
+    transition: width .5s, left 0.5s;
+    } 
+  
+  .menu-item:hover::after {
+    width: 100%;
+    }
+  
