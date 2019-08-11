@@ -34,6 +34,7 @@
      width: 1200px;
       margin: 0 auto;
 }
+
   .site-navigation{
       display: flex;
       justify-content: space-between;
@@ -87,4 +88,254 @@
   .menu-item:hover::after {
     width: 100%;
     }
+
+    /* Заголовок */
+
+    .wrapper{
+      width: 1200px;
+      margin-top: 100px;
+      
+    }
   
+    .subtitle{
+        font-size: 24px;
+        color: #333333;
+        font-family: "Kaushan Script", cursive;
+        text-align: center;
+      }
+      
+      .subtitle:first-letter {
+        text-transform: uppercase;
+      }
+      
+      .subtitle-1 {
+        font-size: 24px;
+        color: #333333;
+        font-family: "Kaushan Script", cursive;
+        text-align: center;
+      }
+      
+      .subtitle-1::first-letter {
+        text-transform: uppercase;
+      }
+
+      .title {
+        font-size: 30px;
+        color: #333333;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        margin-top: 18px;
+      }
+      
+      .title:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #f38181;
+        margin: 39px auto;
+      }
+
+      /*  Сервис */
+
+      
+.service {
+    width: 1140px;
+    height: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .service-box {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    justify-content:space-between;
+    }
+  
+  .service-icon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 22px;
+  }
+  
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+  
+  
+  
+  .service-title {
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1px;
+    margin-top: 0;
+   }
+  
+  .service-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    margin-top: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  
+  
+
+  /* Секция Комманда */
+
+
+  .text {
+    width: 980px;
+    margin: 37px auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+  }
+
+.wrapper-team {
+    margin-top: 95px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .card {
+    width: 380px;
+    height: 545px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .img-item {
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+     position: absolute;
+  }
+  
+  .img {
+    width: 380px;
+    height: 470px;
+    position: relative;
+  }
+  
+  .grad {
+    width: 380px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+  
+  @keyframes move {
+    from {
+  
+    }
+  
+    to {
+  margin-top: -10px;
+  margin-left: -10px;
+    }
+  }
+
+  .img-item:hover .img {
+    animation-duration: 0.2s;
+    animation-name: move;
+    animation-fill-mode: forwards;
+  }
+  
+  .img-item:hover .grad {
+    background: linear-gradient(to top, #fce38a, #f38181);
+    opacity: 0.9;
+    animation-duration: 0.2s;
+    animation-name: move;
+    animation-fill-mode: forwards;
+  }
+  
+  .share {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 205px;
+    left: 80px;
+    opacity: 1;
+  }
+  
+  .img-item:hover .share{
+    animation-duration: 0.2s;
+    animation-name: move;
+    animation-fill-mode: forwards;
+  }
+  
+  .share-icon {
+    width: 56px; 
+    height: 56px;
+    background-color: #fce38a;
+    margin-right: 2px;
+    position: relative;
+    opacity: 0;
+   }
+  
+  .img-item:hover .share-icon {
+       opacity: 1;
+   }
+  
+  .share-icon:hover{
+  background-color: #95e1d3;
+   }
+  
+  .img-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  
+  .item-name {
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: 500px;
+  }
+  
+  .item-position {
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300i;
+    position: relative;
+    top: 514px;
+  }
