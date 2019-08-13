@@ -66,10 +66,10 @@
 
 .page-nav{
     display: flex;
-    align-items: center;
+    margin-top: 50px;
     justify-content: space-between;
     min-height: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 }
 
 .menu-item :hover {
@@ -183,7 +183,7 @@
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    line-height: 1px;
+    line-height: 1;
     margin-top: 0;
    }
   
@@ -289,6 +289,7 @@
     animation-duration: 0.2s;
     animation-name: move;
     animation-fill-mode: forwards;
+   
   }
   
   .share-icon {
@@ -298,15 +299,19 @@
     margin-right: 2px;
     position: relative;
     opacity: 0;
+    
    }
   
   .img-item:hover .share-icon {
        opacity: 1;
+      
    }
   
   .share-icon:hover{
   background-color: #95e1d3;
-   }
+  border-radius: 0;
+  
+}
   
   .img-icon {
     position: absolute;
